@@ -31,12 +31,12 @@ var dataSet = [["Year 3","1","Wilderness School, Medindie, SA","Non-government",
         order: [[ 3, "desc" ]],
         columns: [
             { "title": "Year","width":"0%" },
-            { "title": "Rank","width":"5%" },
-            { "title": "Name","width":"30%" },
+            { "title": "Rank","width":"10%" },
+            { "title": "Name","width":"25%" },
             { "title": "School sector","width":"15%" },
             { "title": "2015 ave" ,"width":"10%"},        
             { "title": "2014 ave","width":"10%" },
-            { "title": "Enrolments","width":"10%" },
+            { "title": "Enrol-\nments","width":"10%" },
             { "title": "ICSEA value" ,"width":"10%"},  
             { "title": "Income ($ per student)" ,"width":"10%"},       
 
@@ -44,15 +44,10 @@ var dataSet = [["Year 3","1","Wilderness School, Medindie, SA","Non-government",
             ],
         columnDefs: [
 		    //Responsive classes
-		    { className: 'none', targets: 0 }, //Hide on all devices
-		    { className: 'all', targets: 1 },       //Show on all devices
-		    { className: 'all', targets: 2 },
-		    { className: 'not-mobile', targets: 3 },
-		    { className: 'all', targets: 4 },
-        { className: 'all', targets: 5 },
-        { className: 'not-mobile', targets: 6 },
-        { className: 'not-mobile', targets: 7 },
-        { className: 'not-mobile', targets: 8 }
+		    { targets: 0 , visible: false}, //Hide on all devices
+		    { responsivePriority: 1, targets: [1,2,4] },       //Show on all devices
+            { responsivePriority: 2, targets: 5 },
+            { responsivePriority: 3, targets: 3 } 
         ]
     } );
     

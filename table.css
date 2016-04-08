@@ -24,3 +24,7 @@
 table.dataTable span.highlight {
   background-color: #FFFF88;
 }
+
+table {
+  width: 95%;
+}
