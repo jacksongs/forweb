@@ -29,3 +29,14 @@ table.dataTable span.highlight {
   background-color: #FFFF88;
 }
 
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    width: 95%;
+    background: white;
+    margin-bottom: auto;
+
+}
+
+    .content {
+        padding: 1em;
+}
